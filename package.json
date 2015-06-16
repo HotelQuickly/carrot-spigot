@@ -1,0 +1,26 @@
+{
+  "name": "carrot-spigot",
+  "version": "0.1.0",
+  "description": "Multi-direcitonal router / shunt",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/HotelQuickly/carrot-spigot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HotelQuickly/carrot-spigot/issues"
+  },
+  "homepage": "https://github.com/HotelQuickly/carrot-spigot",
+  "keywords": [
+    "rabbit"
+  ],
+  "author": "Seth Price <seth.price@hotelquickly.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^2.9.30",
+    "carrot-consumer": "^0.2.0"
+  }
+}
