@@ -21,9 +21,9 @@ function Spigot( opts, ready ) {
         sourceQueueName,
         destinationQueueName
 
-    routeNull = process.env.ROUTE_NULL || opts.routeNull
-    routeBcc = process.env.ROUTE_BCC || opts.routeBcc
-    bccPercent = process.env.BCC_PERCENT || opts.bccPercent
+    routeNull = parseInt(process.env.ROUTE_NULL) || opts.routeNull
+    routeBcc = parseInt(process.env.ROUTE_BCC) || opts.routeBcc
+    bccPercent = parseInt(process.env.BCC_PERCENT) || opts.bccPercent
     bccQueueName = process.env.BCC_QUEUE_NAME || opts.bccQueueName
     sourceQueueName = process.env.SOURCE_QUEUE_NAME || opts.sourceQueueName
     destinationQueueName = process.env.DESTINATION_QUEUE_NAME ||  opts.destinationQueueName
@@ -32,7 +32,7 @@ function Spigot( opts, ready ) {
         onJob: onJob,
         queueName: sourceQueueName,
         pipeName: destinationQueueName,
-        prefetch: process.env.PREFETCH || opts.prefetch,
+        prefetch: parseInt(process.env.PREFETCH) || opts.prefetch,
         queueUrl: process.env.AMQP_URL || opts.queueUrl
     }
 
