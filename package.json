@@ -1,6 +1,6 @@
 {
   "name": "carrot-spigot",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Multi-direcitonal router / shunt",
   "main": "index.js",
   "scripts": {
