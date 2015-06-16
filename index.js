@@ -32,7 +32,7 @@ function Spigot( opts, ready ) {
         onJob: onJob,
         queueName: sourceQueueName,
         pipeName: destinationQueueName,
-        prefetch: process.env.PREFETCH, opts.prefetch,
+        prefetch: process.env.PREFETCH || opts.prefetch,
         queueUrl: process.env.AMQP_URL || opts.queueUrl
     }
 
