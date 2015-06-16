@@ -1,7 +1,7 @@
 Carrot-Router
 =====
 
-Simple implementation of [carrot-consumer](https://github.com/HotelQuickly/carrot-consumer).
+Simple implementation of [carrot-consumer](https://github.com/HotelQuickly/carrot-consumer), for draining queues to no where, moving messages to their starting spot, creating testing / staging flows at percentage of total volume.
 
 Supports
 -----
@@ -15,6 +15,23 @@ Usage
 
 * `npm i carrot-spigot --save`
 * See examples folder
+
+Local Usage / Development
+====
+
+* Clone this
+* `npm i`
+* `node examples/generate.js` give it little bit
+* Monitor your queue wait for 3k msgs, kill it
+* check / modify options in `examples/router.js`
+* run `node examples/router.js`
+* repeat the two steps above to your heart's content
+
+Options
+------
+
+All options below in Env Variables, are available to configure via their camelCase names, and provided to constructor as per examples folder. Env variables are given precedence.
+
 
 Env Variables
 ------
